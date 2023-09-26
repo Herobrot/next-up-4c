@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+}
+  
+* a{
+    text-decoration: none;
+    color: #1286D4;
+}
+  
+* a:hover{
+    color: #1D1D1D;
+}

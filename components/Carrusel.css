@@ -1,0 +1,60 @@
+div#carrusel{
+  position: relative;
+  width: auto;
+  height: 80vh;
+  background-color: rgb(44, 44, 44);
+  padding-top: 7%;
+  padding-bottom: 1%;
+}
+
+
+.button{
+  border: none;
+  opacity: 0.15;
+  cursor: pointer;
+  background: none;
+  transition: 400ms ease;
+}
+
+.button:hover, .button:active{
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 600ms ease-in-out;
+}
+
+div#carrusel > button.siguiente-carrusel{
+  right: -20px;
+}
+
+div#carrusel > button.anterior-carrusel{
+  left: -20px;
+}
+
+div#carrusel > button > img{
+  fill: #a6a6a6;
+  width: 100%;
+  height: 6vw;
+}
+
+div#carrusel > ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#imagenes{
+  inset: 0;
+  opacity: 0.9;
+  transition: 1.3s opacity ease-in;
+}
+
+ul > li.slide > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+ul > li.slide[data-active]{
+  opacity: 1;
+}
