@@ -1,0 +1,168 @@
+main > div#mainNav{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.1% 25%;
+}
+
+main > div#mainNav a{
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    font-weight: bolder;
+    font-family: Kanit, serif;
+}
+
+section > h2{
+  font-weight: 600;
+  text-align: center;
+  padding: 1.1% 0;
+  font-size: 220%;
+  font-family: Kanit, serif;
+}
+
+
+.news-container { 
+    width: 100%; 
+    background: #1D1D1D; 
+    color: #FAFAFA; 
+    position: relative;
+  } 
+
+  .con-tlt { 
+    min-width: 800px; 
+    width: 90%; 
+    margin: 0 auto;
+  }
+  
+  .esp-xt1 { 
+    display: block; 
+    height: 40px; 
+    background: #FAFAFA;
+  } 
+
+  .esp-xt1  { 
+    background: #1D1D1D;
+  } 
+
+  .cen-6z3 { 
+    text-align: center;
+  } 
+
+  .sec-box { 
+    text-align: center; 
+    padding: 10px;
+  } 
+
+  .grid-7lw { 
+    display: table; 
+    margin: 0 auto;
+  } 
+
+  .a-Noticias {
+    padding: 2.9% 0; 
+    text-align: center;
+    font-size: 1.2vw;
+  } 
+
+  a { 
+    text-decoration: none; 
+    color: #1286D4; 
+    cursor: pointer; 
+    font-weight: 600;
+  } 
+
+  a:hover { 
+    color: #1D1D1D;
+  } 
+
+  .news-container a:hover { 
+    color: #ffffff;
+  } 
+
+  h1 { 
+    font-weight: 300; 
+    font-family: Kanit, Serif; 
+    letter-spacing: 1px;
+    font-size: 24pt; 
+    line-height: 50pt; 
+    margin: 0;
+  } 
+
+  .column-1 { 
+    display: table-cell; 
+    vertical-align: top; 
+    position: relative;
+  } 
+
+  .fa-89o { 
+    border: 3px solid transparent; 
+    cursor: pointer;
+  } 
+
+  .column-1 table  { 
+    width: 100%; 
+    margin: 5% 0; 
+    border-collapse: collapse; 
+    border-spacing: 0;
+  } 
+
+  .column-1 table td  { 
+    vertical-align: top;
+    position: relative;
+  } 
+
+  .fa-89o .img-news  { 
+    padding: 0px; 
+    overflow: hidden; 
+    height: 10vw; 
+    align-content: center;
+  } 
+
+  .fic-mr3 { 
+    padding: 10px; 
+    font-size: 1.1em;
+  } 
+
+  .aco-dxf { 
+    font-size: 10pt;
+  } 
+
+  .fic-mr3  { 
+    background: #fff; 
+    color: #2C353D;
+  } 
+
+  .fa-89o img  { 
+    position: absolute; 
+    left: 0; 
+    margin-bottom: -4px;
+  } 
+
+  .img-news img  { 
+    width: 100%;
+  }
+
+  .fa-89o .fic-p2r  { 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #FAFAFA; 
+    font-size: 15pt; 
+    line-height: 20px; 
+    text-align: left; 
+    height: 0px; 
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%; 
+    overflow-y: hidden;
+    transition: 300ms ease-in-out;
+  }
+  
+  .img-news:hover .fic-p2r{
+    height: 70px;
+    transition: 300ms ease-in-out;
+  }
+
+  .fa-89o .fic-p2r p  { 
+    padding: 8px; 
+    margin: 0;
+  }

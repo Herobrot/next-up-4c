@@ -58,3 +58,69 @@ ul > li.slide > img{
 ul > li.slide[data-active]{
   opacity: 1;
 }
+
+#Slider{
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+}
+
+#Slider > button{
+  cursor: pointer;
+  border-radius: 360px;
+  background: black;
+}
+
+button.slider-izq{
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  width: fit-content;
+  height: fit-content;
+}
+
+button.slider-der{
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+#Slider > button > img{
+  color: white;
+  width: 15px;
+  height: 22px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  } 
+}
+
+.contenidoSlider-contenedor{
+  height: 100%;
+  position: relative;
+  animation: 20s slide infinite linear;
+}
+
+.contenidoSlider-contenedor:hover{
+  animation-play-state: paused;
+}
+
+.contenidoSlider-contenedor > img{
+  padding: 0.3%;
+  margin: auto 0.15%;
+  width: auto;
+  height: 120px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}

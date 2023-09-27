@@ -36,8 +36,8 @@ header > nav > div#texto{
   width: 58%;
 }
 
-header > nav > div#texto > a{
-  padding: 0 1vw;
+header > nav > div#texto > #a{
+  padding: 0 0.5vw;
   cursor: pointer;
   text-decoration: none;
   font-size: 100%;
@@ -47,7 +47,7 @@ header > nav > div#texto > a{
   font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-header > nav > div#texto > a:hover{
+header > nav > div#texto > #a:hover{
   color:rgb(252, 130, 42);
 }
 

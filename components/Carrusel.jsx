@@ -4,7 +4,7 @@ import { useState } from "react";
 const slideStyles = {
     width: "100%",
     height: "100%",
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
   };
   
@@ -13,8 +13,6 @@ const slideStyles = {
     top: "50%",
     transform: "translate(0, -50%)",
     right: "1%",
-    padding: "1%",
-    fontSize: "5vw",
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
@@ -25,8 +23,6 @@ const slideStyles = {
     top: "50%",
     transform: "translate(0, -50%)",
     left: "1%",
-    padding: "1%",
-    fontSize: "5vw",
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
@@ -50,6 +46,61 @@ const slideStyles = {
     cursor: "pointer",
     fontSize: "1.2vw",
   };
+
+  export function Slider(){
+    return(
+      <div id="Slider">                
+        <div className="contenidoSlider-contenedor">                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_conacyt.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_utyp.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/anuies-65.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/iaip.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/roboDK1.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/pnt.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/obligaciones.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_conacyt.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_utyp.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/anuies-65.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_red.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/ETSLogo.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/iso-9001.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/LabVIEW_logo.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/contraloria_social.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/inai.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/LogoPlataforma.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/SIPOT.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/iaip.png" />                        
+        </div>
+        <div className="contenidoSlider-contenedor">                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_conacyt.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_utyp.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/anuies-65.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/iaip.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/roboDK1.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/pnt.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/obligaciones.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_conacyt.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_utyp.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/anuies-65.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/logo_red.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/ETSLogo.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/iso-9001.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/LabVIEW_logo.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/contraloria_social.png" />                                                                            
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/inai.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/LogoPlataforma.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/SIPOT.png" />                                                
+          <img src="https://www.upchiapas.edu.mx/images/ext_gray/iaip.png" />                        
+        </div>
+        <button className="slider-izq" type="button">
+          <img src="/left-arrow-svg-white.svg" alt="" srcset="" />
+        </button>
+        <button className="slider-der" type="button">
+          <img src="/right-arrow-svg-white.svg" alt="" srcset="" />
+        </button>
+      </div>
+    );
+  }
   
   export default function Carrusel ({ slides }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -75,10 +126,10 @@ const slideStyles = {
       <div style={sliderStyles}>
         <div>
           <div onClick={goToPrevious} style={leftArrowStyles} className="button">
-            ❰
+            <img src="/chevron-thin-left-white.svg"/>
           </div>
           <div onClick={goToNext} style={rightArrowStyles} className="button">
-            ❱
+            <img src="/chevron-thin-right-white.svg"/>
           </div>
         </div>
         <div style={slideStylesWidthBackground} id="imagenes"></div>
