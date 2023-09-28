@@ -1,6 +1,30 @@
 import "./Pie.css"
 import Link from "next/link"
 
+export function Footer(){
+    return(
+        <>
+            <footer className="style-79">
+                <div className="style-80">
+                    <div className="style-81">
+                        <img className="style-82" src="https://www.upchiapas.edu.mx/images/LOGOS%20EDUCACION%202022%20PNG.png" />
+                    </div>
+                    <div className="style-83">
+                        <h6 align="center" className="style-84">Suchiapa<br className="style-85" />
+                            Carretera Tuxtla Gutierrez. - Portillo Zaragoza Km 21+500<br className="style-86" />
+                            Col. Las Brisas; Suchiapa, Chiapas. CP.29150. Teléfono: 01961 61 71460<br className="style-87" />
+                            Suchiapa, Chiapas.
+                        </h6>
+                    </div>
+                    <div className="style-88">
+                        <img className="style-89" src="https://platinum.upchiapas.edu.mx/pimgs/chiapas.png" />
+                    </div>
+                </div>
+            </footer>
+        </>
+    )
+}
+
 
 export default function Pie(){
     return(

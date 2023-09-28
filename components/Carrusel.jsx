@@ -93,10 +93,10 @@ const slideStyles = {
           <img src="https://www.upchiapas.edu.mx/images/ext_gray/iaip.png" />                        
         </div>
         <button className="slider-izq" type="button">
-          <img src="/left-arrow-svg-white.svg" alt="" srcset="" />
+          <img src="/left-arrow-svg-white.svg" alt="" srcSet="" />
         </button>
         <button className="slider-der" type="button">
-          <img src="/right-arrow-svg-white.svg" alt="" srcset="" />
+          <img src="/right-arrow-svg-white.svg" alt="" srcSet="" />
         </button>
       </div>
     );

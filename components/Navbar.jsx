@@ -10,11 +10,11 @@ export default function Navbar(){
               </div>
               <div id="texto">
                   <Link id="a" href="/">INICIO</Link>
-                  <Link id="a" href="./ofertaEducativa.html">OFERTA EDUCATIVA</Link>
-                  <Link id="a" href="./alumnos.html">ALUMNOS</Link>
-                  <Link id="a" href="./aspirantes.html">ASPIRANTES</Link>
-                  <Link id="a" href="./egresados.html">EGRESADOS</Link>
-                  <Link id="a" href="./transparencia.html">TRANSPARENCIA</Link>
+                  <Link id="a" href="/oferta">OFERTA EDUCATIVA</Link>
+                  <Link id="a" href="/alumnos">ALUMNOS</Link>
+                  <Link id="a" href="/aspirantes">ASPIRANTES</Link>
+                  <Link id="a" href="/egresados">EGRESADOS</Link>
+                  <Link id="a" href="/transparencia">TRANSPARENCIA</Link>
               </div>
               <div id="iconos">
                   <img src="/logo-facebook.png" alt="" />
