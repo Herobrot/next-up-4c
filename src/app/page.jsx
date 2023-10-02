@@ -2,25 +2,52 @@
 
 import "@/app/inicio.css"
 import Link from "next/link"
+import { Suspense } from "react"
 import Carrusel from "../../components/Carrusel"
 import { Slider } from "../../components/Carrusel"
 import Sitios from "../../components/SitiosDeInteres"
 import Pie from "../../components/Pie"
 import Navbar from "../../components/Navbar"
+import { useState, useEffect } from "react"
 
 export default function Home() {
-  const slides = [
-    {url: "http://localhost:3000/banner.png"},
-    {url: "http://localhost:3000/Banner1.jpg"},
-    {url: "http://localhost:3000/banner2.jpg"},
-    {url: "http://localhost:3000/banner3.jpg"}
-  ]
+    const [slides1, setSlides1] = useState();
+
+    useEffect(() => {
+      async function fetchData(){
+        const res = await fetch('/api');
+        const data = await res.json();
+        console.log(data);
+        setSlides1(data);
+      }
+
+      fetchData();
+    }, [])
+
+    const slides = [
+        {        
+            url: "http://localhost:3000/banner.png"
+        },
+        {        
+            url: "http://localhost:3000/Banner1.png"
+        },
+        {        
+            url: "http://localhost:3000/banner2.png"
+        },
+        {        
+            url: "http://localhost:3000/banner3.png"
+        }
+    ]
+
+    if(slides1 === undefined){
+        setSlides1(slides);
+    }
 
   return (
     <>
       <Navbar />
       <main>
-        <Carrusel slides={slides} />
+        <Carrusel slides={slides1} />
         <div id="mainNav">
           <Link href={"#"}>NOSOTROS</Link>
           <Link href={"#"}>SERVICIOS</Link>
